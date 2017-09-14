@@ -1,4 +1,5 @@
-# this solution timed out
+# Problem prompt:
+# Write a function that takes a string as input and returns the string reversed.
 def reverseString(s):
  	new_s = ''
  	if s:
