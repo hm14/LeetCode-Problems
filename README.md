@@ -1,3 +1,3 @@
 # LeetCode-Problems
 
-Practiec and Solutions for different LeetCode Problems.
+Practice and Solutions for different LeetCode Problems.
