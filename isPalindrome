@@ -1,0 +1,21 @@
+# Problem prompt
+# Determine whether an integer is a palindrome. 
+# Do this without extra space.
+
+def isPalindrome(number):
+	if number < 0:
+		return False
+	if number >= 10:
+		number = str(number)
+
+		for i in range(0, (len(number))/2):
+			if number[i] != number[len(number)-i-1]:
+				return False
+
+	return True
+
+# test cases
+num = [10, 5, 123, 23456, 121, 12321, 9898989, 101, 110, 7667, 2222, -9, 0, 67869869, 87878, 8778, 12345321]
+for n in range(0, len(num)):
+  if isPalindrome(num[n]):
+    print str(num[n])
