@@ -27,3 +27,10 @@ def deleteDuplicates(head):
 				previous = current
 	
 	return head
+
+# test cases
+# empty linked list
+# single node
+# duplicates at beginning of list
+# duplicates at end of list
+# duplicates with even and odd frequency
