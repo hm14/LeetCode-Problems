@@ -8,14 +8,22 @@
 #         self.next = None
 
 def deleteDuplicates(head):
+	"""
+	:type head: ListNode
+	:rtype: ListNode
+	"""
+	
 	if head:
-		current = head	
+		previous = head
+		current = head
 		while current.next:
-			temp = current
 			current = current.next
-			if(temp.val == current.val):
+			if previous.val == current.val:
 				if current.next:
-					temp.next = current.next
+					previous.next = current.next
 				else:
-					temp.next = None
+					previous.next = None
+			else:
+				previous = current
+	
 	return head
